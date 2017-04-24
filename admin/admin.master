@@ -1,0 +1,223 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin_admin" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital India Admin</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+     <!-- MORRIS CHART STYLES-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Digital India admin</a> 
+            </div>
+  <div style="color: white;
+padding: 15px 50px 5px 50px;
+float: right;
+font-size: 16px;">
+      <asp:Label ID="lblc" runat="server"></asp:Label>
+         &nbsp; <a href="Index.aspx" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+        </nav>   
+           <!-- /. NAV TOP  -->
+                <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+				<li class="text-center">
+                    <img src="assets/img/find_user.png" class="user-image img-responsive"/>
+					</li>
+				
+					
+                    <li>
+                        <a class="active-menu"  href="main.aspx"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
+                    </li>
+                     <li>
+                        <a  href="state.aspx"><i class="fa fa-desktop fa-3x"></i> Add Details</a>
+                     <ul class="nav nav-second-level">
+                            <li>
+                                <a href="state.aspx">States Details</a>
+                            </li>
+                            <li>
+                                <a href="cities.aspx">Cities Details</a>
+                            </li>
+                             <li>
+                                <a href="Location.aspx">Location Details</a>
+                            </li>
+                    </li>
+                    </ul>
+              
+                    <li>
+                        <a   href="catagory.aspx"><i class="fa fa-laptop fa-3x"></i> Catagory Details</a>
+                    </li>
+              
+               
+                    <li>
+                        <a  href="state.aspx"><i class="fa fa-desktop fa-3x"></i> Approval</a>
+                     <ul class="nav nav-second-level">
+                           <%-- <li>
+                                <a href="gov_approve.aspx">Government</a>
+                            </li>--%>
+ 
+                            <li>
+                                <a href="ambassador_approve.aspx">Ambassador</a>
+                            </li>
+                            <li>
+                                <a href="company_approve.aspx">Company </a>
+                            </li>
+                             <li>
+                                <a href="ngo_approve.aspx">NGO</a>
+                            </li>
+                         </ul>
+                        </li>
+
+
+                   
+               
+                <%--<%--<%--   <%-- <li>
+                        <a  href="cities.aspx"><i class="fa fa-qrcode fa-3x"></i>Cities Details</a>
+                    </li>
+						 <li  >
+                        <a   href="Location.aspx"><i class="fa fa-bar-chart-o fa-3x"></i> Location Details</a>
+                    </li>	
+                	 <li  >--%>
+                       <!-- <a   href="Login.aspx"><i class="fa fa-bolt fa-3x"></i> Login</a> -->
+                   <%-- </li>	
+                    </ul>
+                    <li  >
+                        
+                    </li>--%>
+                     
+                         <li>
+                        <a href="#"><i class="fa fa-sitemap fa-3x"></i> ADD<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="upload.aspx">Upload Video</a>
+                            </li>
+                            <li>
+                                <a href="application.aspx">Application</a>
+                            </li>
+                        </ul>
+                       </li>
+                <li>
+                      <a href="#"><i class="fa fa-sitemap fa-3x"></i>View Details<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                         <li>
+                                <a href="Viewuser.aspx">UserDetails</a>
+                            </li>
+                            <li>
+                                <a href="viewCompany.aspx">CompanyDetails</a>
+                            </li>
+                        <li>
+                                <a href="viewNGO.aspx">NGODetails</a>
+                            </li>
+                    </ul>
+                </li>
+                 <li>
+                      <a href="#"><i class="fa fa-sitemap fa-3x"></i>Reports<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                         <li>
+                                <a href="print.aspx">User Report</a>
+                            </li>
+                            <li>
+                                <a href="printcom.aspx">Company Report</a>
+                            </li>
+                        <li>
+                                <a href="printngo.aspx">NGO Report</a>
+                            </li>
+                    </ul>
+                </li>
+                
+                            <%--<li>
+                                <a href="#">Address<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#">State</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">City</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Loction</a>
+                                    </li>
+
+                                </ul>
+                               
+                            </li>--%>
+                    
+               <br/>
+<i style="color:#808080" >Advertisement</i>
+
+<script async src="../../../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<!-- BinaryCart -Demo - Left -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-9366031574447333"
+     data-ad-slot="7367196015"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+            
+        </nav>  
+        <!-- /. NAV SIDE  -->
+        
+         <!-- /. PAGE WRAPPER  -->
+        </div>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="body" runat="server">
+        
+        </asp:ContentPlaceHolder>
+         
+     <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+     <!-- MORRIS CHART SCRIPTS -->
+     <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/js/morris/morris.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../../../../../www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-38955291-1', 'auto');
+        ga('send', 'pageview');
+
+</script>
+    </div>
+    </form>
+</body>
+</html>
+
