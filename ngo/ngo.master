@@ -1,0 +1,245 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ngo.master.cs" Inherits="ngo_ngo" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Digital India</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+ <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+   
+    <meta content="primary - responsive and retina ready template" name="description">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+    <link href="assets/images/temp.png" rel="shortcut icon"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="assets/images/apple-touch-icon-precomposed.png" />
+    <!-- JS FILES -->
+    <script type="text/javascript" src="assets/js/jquery-1.20.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+    <!-- CSS FILES -->
+    <link href="assets/rs-plugin/css/settings.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="assets/css/navstylechange.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="assets/css/cubeportfolio-3.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="assets/css/responsive.css" 
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+  
+         <div class="wrapper">
+      <header>
+        <div class="page_head">
+            <div id="nav-container" class="nav-container" style="height: auto;">
+                <nav role="navigation">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pull-left">
+                                <div class="logo">
+                                    <a href="Default.aspx"><img src="assets/images/logo.png" alt="Logo"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-6 pull-right">
+                              <div class="menu dankovteam-menu-wrapper">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                              <div class="navbar-collapse collapse">
+                                <div class="menu-main-menu-container">
+                                  <ul>
+                                    <li class="current-menu-item"><a href="index_ngo.aspx">Home</a></li>
+                                      <li class="current-menu-item"><a href="ngoProfile.aspx">NGO Profile</a></li>
+                                        <li class="current-menu-item"><a href="post.aspx">Post</a></li>
+                                        <li class="current-menu-item"><a href="viewNgoprofile.aspx">View NGO Profile</a></li>
+                                       <li><a href="#">Clean India</a>   
+                                          <ul class="sub-menu">
+                                            
+                                            <li><a href="cleanImages.aspx">Images</a></li>
+                                            <li><a href="cleanvideo.aspx">Video</a></li>
+                                          </ul>
+                                         </li>
+                                        
+                                       <li class="current-menu-item"><a href="women.aspx">WomenEmpowerment</a></li>
+                                    <%--<li><a href="index_ngo.aspx">NGO</a>
+                                      <ul class="sub-menu">
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="contacts.html">Contact</a></li>
+                                        <li><a href="pricing_tables.html">Pricing Tables</a></li>
+                                        <li><a href="404.html">404 Error</a></li>
+                                        <li><a href="faq.html">F.A.Q</a></li>
+                                        <li><a href="#">Third Level Menu</a>
+                                          <ul class="sub-menu">
+                                            <li><a href="#">Sublevel Title</a></li>
+                                            <li><a href="#">Another Menu</a></li>
+                                            <li><a href="#">And More One</a></li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </li>--%>
+                                  <%--  <li><a href="../company/index_company.aspx">Company Requirment</a>
+                                      <ul class="sub-menu">
+                                        <li><a href="portfolio_2.html">New Requirment</a></li>
+                                        <li><a href="portfolio_3.html">Create New Profile</a></li>
+                                        <li><a href="portfolio_4.html">Job New Company</a></li>
+                                     
+                                      </ul>
+                                    </li>--%>
+                                    <%--<li><a href="../ambassador/index_ambassador.aspx">Ambassador</a>
+                                      <ul class="sub-menu">
+                                        <li><a href="blog_classic_fullwidth.html">Classic Fullwidth</a></li>
+                                        <li><a href="blog_classic_sidebar.html">Classic Sidebar</a></li>
+                                        <li><a href="blog_medium_sidebar.html">Medium Sidebar</a></li>
+                                        <li><a href="blog_single.html">Single Fullwidth</a></li>
+                                      </ul>
+                                    </li>--%>
+                                  <%--<li><a href="../government/index_gov.aspx">Govrment</a></li>
+                                  <li class="wpmenucartli wpmenucart-display-standard" id="wpmenucartli">
+                         <a class="wpmenucart-contents empty-wpmenucart-visible" href="shop.html" title="Start shopping">
+                         <i class="icon-basket"></i><span class="cartcontents">0</span></a></li>--%>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+      </header>
+
+    <div>
+       
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        </div>
+    </form>
+
+    
+         <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+   
+
+   
+   <div>
+
+       <div class="footer">
+        <div class="soc-media">
+          <div class="container">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 soc-medeia-footer facebook"><div class="soc-more"><a href="http://facebook.com/" target="_blank"><i class="icon-facebook"></i></a></div></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 soc-medeia-footer twitter"><div class="soc-more"><a href="http://twitter.com/" target="_blank"><i class="icon-twitter"></i></a></div></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 soc-medeia-footer googleplus"><div class="soc-more"><a href="http://plus.google.com/" target="_blank"><i class="icon-googleplus"></i></a></div></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 soc-medeia-footer dribbble"><div class="soc-more"><a href="http://dribbble.com/" target="_blank"><i class="icon-dribbble"></i></a></div></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 soc-medeia-footer linkedin"><div class="soc-more"><a href="http://linkedin.com/" target="_blank"><i class="icon-linkedin"></i></a></div></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 soc-medeia-footer rss"><div class="soc-more"><a href="https://www.jio.com/preview/jiofi" target="_blank"><i class="icon-rss"></i></a></div></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="widget_text footer-widget">
+                <div class="textwidget">
+                  <a href="#" style="width: 100%;display: inline-block;padding-bottom: 15px;"><img src="assets/images/logo_footer.png" alt="" ></a>Digital India is a campaign launched by the Government of India to ensure that Government services are made available to citizens electronically by improving online infrastructure and by increasing Internet connectivity or by making the country digitally empowered in the field of technology.
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="widget_primary-get-in-touch footer-widget">
+                <h4 class="widget-title">Get in Touch</h4>
+                <ul class="contact-footer contact-composer">
+                  <li><i class="icon-map-pin"></i> <span>Adress: D-502;Status Tower;Opp TV Tower;Thaltej;Ahmedabad(Gujarat)</span></li>
+                  <li><i class="icon-phone"></i> <span>Phone: (+91)9033301250</span></li>
+                  <li><i class="icon-megaphone"></i> <span>Website: apconsservices.com</span></li>
+                  <li><i class="icon-envelope"></i> <span>E-mail: shaileshpatel0910@email.com</span></li>
+                   </ul>
+              </div>            
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="widget_categories footer-widget"><h4 class="widget-title">Categories</h4>   
+                <ul>
+                  <li><a href="http://www.digitaljagriti.in/">Digi Dhan Abhiyan</a> <span class="oi_cat_count">1</span></li>
+                  <li><a href="https://secure.mygov.in/group/swachh-bharat-clean-india/">Clean India</a> <span class="oi_cat_count">1</span></li>
+                  <li><a href="http://ndlm.in/">Digital Saksharta Abhiyan</a> <span class="oi_cat_count">2</span></li>
+                  <li><a href="http://pmjdy.gov.in/">Pradhan Mantri Jan Dhan Yojana (PMJDY) </a> <span class="oi_cat_count">1</span></li>
+                  <li><a href="http://www.makeinindia.com/home">Make in India</a> <span class="oi_cat_count">1</span></li>
+                </ul>
+              </div>            
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="widget_dankovteam_flickr footer-widget"><h4 class="widget-title">Flickr Photos</h4>
+              <!--  <div class="flickr_widget_wrapper"><script src="http://www.flickr.com/badge_code_v2.gne?count=12&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=52617155@N08"></script></div> -->
+          <table border="0">
+         <tr>
+                <td><img src="assets/images/filiker1.jpg" width="300px" height="300px"  /></td>
+                <td><img src="assets/images/filiker2.jpg" width="300px" height="300px" /></td>
+                <td><img src="assets/images/filiker3.jpg" width="300px" height="300px" /></td>
+        </tr>
+        <tr>    
+                <td><img src="assets/images/filiker4.jpg" width="300px" height="300px"/></td>
+                <td><img src="assets/images/filiker5.jpg" width="300px" height="300px"/></td>
+                <td><img src="assets/images/filiker6.jpg" width="300px" height="300px"/></td>
+        </tr>
+         <tr>
+                <td><img src="assets/images/filiker7.jpg" width="300px" height="300px"/></td>
+                <td><img src="assets/images/filiker8.jpg" width="300px" height="300px"/></td>
+                <td><img src="assets/images/filiker9.jpg" width="300px" height="300px"/></td>
+        </tr>
+     
+</table>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="container">
+              <div class="footer-bottom">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-ms-12 pull-left">
+                    <div class="copyright">Copyright © 2017 Digital India. Design by Shailesh Patel</a></div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-ms-12 pull-right">
+                    <div class="foot_menu">
+                      <div class="menu-footer-menu-container">
+                       
+                      </div>            
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <script type="text/javascript" src="assets/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/retina.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/js/sticky.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.inview.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.cubeportfolio.min.js"></script>
+    <script type="text/javascript" src="assets/js/portfolio-main.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+
+</body>
+</html>
