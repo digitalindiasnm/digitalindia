@@ -28,7 +28,7 @@ public partial class admin_application : System.Web.UI.Page
         uplodl.flag = "insert";
         uplodl.app_name = txtName.Text;
        // uplodl.app_id = Convert.ToInt32(Session["app_id"].ToString());
-        uplodl.app_icon = "apk/" + fupicon.FileName;
+        uplodl.app_icon = "application/" + fupicon.FileName;
         uplodl.app_apk = "application/" + fupapp.FileName;
         uplodl.app_desc = txtdesc.Text;
         uplobl.save(uplodl);
