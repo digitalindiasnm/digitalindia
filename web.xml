@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<configuration>
+  <system.web>
+    <compilation debug="true" targetFramework="4.5"/>
+    <httpRuntime targetFramework="4.5"/>
+  <pages>
+    <controls>
+      <add tagPrefix="ajaxToolkit" assembly="AjaxControlToolkit" namespace="AjaxControlToolkit"/>
+    </controls>
+  </pages>
+  </system.web>
+<connectionStrings>
+  <add connectionString="Server=e95f9fff-c763-47f1-9b0b-a763004bb960.sqlserver.sequelizer.com;Database=dbe95f9fffc76347f19b0ba763004bb960;User ID=wgsrfikurjfjdzjq;Password=sYmJbpPsHigvynMw7d52XqBDwezwyDKJsbq7hEpLGzgdmdxBRYye8CXcwPm5Ws3d;" name="con" providerName="system.data.sqlClient"/>
+</connectionStrings>
+</configuration>
